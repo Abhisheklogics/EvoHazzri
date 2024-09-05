@@ -24,7 +24,9 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack'
 
 import Home from './screens/Face';
 import App from './screens/home';
+
 import Multiple from './screens/Multiple';
+
 export type RootStackParamList={
   Home:undefined
   App:undefined,
@@ -37,6 +39,8 @@ function Section() {
   return (
   
     <NavigationContainer>
+ 
+
  
       <Stack.Navigator screenOptions={{
    headerStyle:{
