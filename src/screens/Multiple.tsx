@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState,useEffect} from 'react';
 
 import {
   
@@ -9,8 +9,15 @@ StyleSheet,
   TouchableOpacity,
   Image
 } from 'react-native';
+
+
  function Multiple()
  {
+
+  
+
+
+
     return (
         <SafeAreaView>
         <View style={styles.box}>
