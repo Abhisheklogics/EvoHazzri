@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react';
+
 
 import {
   
@@ -97,3 +97,5 @@ StyleSheet,
   })
   
 export default Multiple
+
+
