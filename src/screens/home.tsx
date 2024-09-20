@@ -9,6 +9,8 @@ StyleSheet,
   TouchableOpacity,
   Image
 } from 'react-native';
+
+
  function App()
  {
     return (
@@ -22,10 +24,11 @@ StyleSheet,
               
             }/>
             <Text style={styles.heading1}>Mark Attendance</Text>
-            </View>
-          
-          </TouchableOpacity>
          
+            </View>
+         
+          </TouchableOpacity>
+        
           <View style={styles.footer}></View>
         </View>
         </SafeAreaView>
