@@ -23,19 +23,7 @@ import CameraScreen from '../../CameraScreen';
         <View style={styles.box}>
           <View style={styles.boxBorder}><Text style={styles.heading}>EvoHazzri</Text></View>
           <CameraScreen/>
-          <TouchableOpacity style={styles.button} >
-            <View style={styles.img}>
           
-
-            <Image style={{width: 50, height: 50, marginRight:310, marginTop:20}}
-            source={{uri:'https://cdn-icons-png.flaticon.com/128/3064/3064573.png'}
-              
-            }/>
-            <Text style={styles.heading1}>Mark Attendances</Text>
-            </View>
-          
-          </TouchableOpacity>
-         
           <View style={styles.footer}></View>
         </View>
         </SafeAreaView>

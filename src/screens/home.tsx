@@ -21,20 +21,7 @@ import CameraScreen from '../../CameraScreen.js';
          <CameraScreen/>  
          </View>
          
-          <TouchableOpacity style={styles.button} >
-         
-            <View style={styles.img}>
-            <Image style={{width: 50, height: 50, marginRight:310, marginTop:20}}
-            source={{uri:'https://cdn-icons-png.flaticon.com/128/3064/3064573.png'}
-              
-            }/>
-           
-            <Text style={styles.heading1}>Mark Attendance</Text>
-         
-            </View>
-         
-          </TouchableOpacity>
-        
+                 
           <View style={styles.footer}></View>
         </View>
         </SafeAreaView>
@@ -62,29 +49,12 @@ import CameraScreen from '../../CameraScreen.js';
       
       height:60,
       position:'relative',
-      top:540
+      top:590
      
     },
-    button:{
-      alignItems: 'center',
-      backgroundColor: '#DDDDDD',
-      padding: 0,
-      position:'static',
-      top:530, 
-      zIndex:10, 
-      height:80,
-     borderRadius:30
-    },
+   
     
-    heading1:{
-      textAlign:'center',
-      fontSize:30,
-      marginTop:-50,
-      fontWeight:'bold',
-      color:'#3EBB3E',
-      marginLeft:20
-     
-    },
+   
     heading2:{
       textAlign:'center',
       fontSize:32 ,
@@ -93,10 +63,8 @@ import CameraScreen from '../../CameraScreen.js';
       color:'#3EBB3E'
      
     },
-    img:{
-   height:100,
-  
-    }
+   
+    
     
   })
   

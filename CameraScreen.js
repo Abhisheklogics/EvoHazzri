@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button, Image, StyleSheet, PermissionsAndroid ,TouchableOpacity} from 'react-native';
+import { View, Button, Image, StyleSheet, PermissionsAndroid ,TouchableOpacity,Text} from 'react-native';
 import { launchCamera } from 'react-native-image-picker';
 
 const CameraScreen = () => {
@@ -57,9 +57,23 @@ const CameraScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Button title="Open Camera" onPress={openCamera} />
-      {image && <Image source={{ uri: image }} style={styles.image} />}
-      
+     
+     
+      <TouchableOpacity style={styles.button}  onPress={openCamera} >
+            <View style={styles.img}>
+          
+
+            <Image style={{width: 50, height: 50, marginRight:310, marginTop:20}}
+            source={{uri:'https://cdn-icons-png.flaticon.com/128/3064/3064573.png'}
+              
+            }/>
+             {image && <Image source={{ uri: image }} style={styles.image} />}
+             {image ?<Text style={styles.heading2}>Aman Raj and EvoHaazri Id = Evo1</Text>:<Text></Text>}
+           {image ? <Text style={styles.heading1}>Haazri lag gayi</Text>:<Text style={styles.heading1}>Mark Attendances</Text>} 
+            </View>
+          
+          </TouchableOpacity>
+         
     </View>
   );
 };
@@ -67,17 +81,18 @@ const CameraScreen = () => {
 const styles = StyleSheet.create({
   container: {
     
-    justifyContent: 'center',
-    alignItems: 'center',
    
+    
+   width:400,
    position:'relative',
+   left:5,
    top:420
   },
   image: {
     width: 350,
     height: 320,
    position:'absolute',
-   top:-400,
+   top:-550,
     borderRadius: 10,
   
   },
@@ -86,7 +101,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#DDDDDD',
     padding: 0,
     position:'static',
-    top:530, 
+    top:160, 
     zIndex:10, 
     height:80,
    borderRadius:30
@@ -97,13 +112,20 @@ const styles = StyleSheet.create({
      },
      heading1:{
       textAlign:'center',
+      position:'absolute',
       fontSize:30,
-      marginTop:-50,
+      top:20,
       fontWeight:'bold',
       color:'#3EBB3E',
-      marginLeft:20
+      marginLeft:80
      
     },
+    heading2:{
+      position:'absolute',
+      top:-190,
+      left:50,
+      fontSize:30
+    }
 });
 
 export default CameraScreen;
