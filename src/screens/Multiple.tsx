@@ -22,6 +22,7 @@ import CameraScreen from '../../CameraScreen';
         <SafeAreaView>
         <View style={styles.box}>
           <View style={styles.boxBorder}><Text style={styles.heading}>EvoHazzri</Text></View>
+          <CameraScreen/>
           <TouchableOpacity style={styles.button} >
             <View style={styles.img}>
           

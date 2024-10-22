@@ -10,15 +10,16 @@ StyleSheet,
   Image
 } from 'react-native';
 
-import CameraScreen from '../../CameraScreen';
+import CameraScreen from '../../CameraScreen.js';
  function App()
  {
     return (
         <SafeAreaView>
         <View style={styles.box}>
           <View style={styles.boxBorder}><Text style={styles.heading}>EvoHazzri</Text>
-          <CameraScreen/>
-          </View>
+         
+         <CameraScreen/>  
+         </View>
          
           <TouchableOpacity style={styles.button} >
          
@@ -58,17 +59,19 @@ import CameraScreen from '../../CameraScreen';
     },
     footer:{
        backgroundColor:'#FA8129', 
-      marginTop:590,
+      
       height:60,
-      position:'relative'
+      position:'relative',
+      top:540
      
     },
     button:{
       alignItems: 'center',
       backgroundColor: '#DDDDDD',
       padding: 0,
-      position:'relative',
-      top:570,  
+      position:'static',
+      top:530, 
+      zIndex:10, 
       height:80,
      borderRadius:30
     },
@@ -98,3 +101,4 @@ import CameraScreen from '../../CameraScreen';
   })
   
 export default App  
+
