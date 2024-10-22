@@ -10,19 +10,24 @@ StyleSheet,
   Image
 } from 'react-native';
 
-
+import CameraScreen from '../../CameraScreen';
  function App()
  {
     return (
         <SafeAreaView>
         <View style={styles.box}>
-          <View style={styles.boxBorder}><Text style={styles.heading}>EvoHazzri</Text></View>
+          <View style={styles.boxBorder}><Text style={styles.heading}>EvoHazzri</Text>
+          <CameraScreen/>
+          </View>
+         
           <TouchableOpacity style={styles.button} >
+         
             <View style={styles.img}>
             <Image style={{width: 50, height: 50, marginRight:310, marginTop:20}}
             source={{uri:'https://cdn-icons-png.flaticon.com/128/3064/3064573.png'}
               
             }/>
+           
             <Text style={styles.heading1}>Mark Attendance</Text>
          
             </View>

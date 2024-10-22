@@ -10,7 +10,7 @@ StyleSheet,
   Image
 } from 'react-native';
 
-
+import CameraScreen from '../../CameraScreen';
  function Multiple()
  {
 
@@ -24,6 +24,8 @@ StyleSheet,
           <View style={styles.boxBorder}><Text style={styles.heading}>EvoHazzri</Text></View>
           <TouchableOpacity style={styles.button} >
             <View style={styles.img}>
+          
+
             <Image style={{width: 50, height: 50, marginRight:310, marginTop:20}}
             source={{uri:'https://cdn-icons-png.flaticon.com/128/3064/3064573.png'}
               

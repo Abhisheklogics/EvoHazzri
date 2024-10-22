@@ -17,7 +17,7 @@ const Home=({navigation}:HomeProps)=>
        onPress={()=>navigation.push('App')}
    
       >
-      
+        
         <Text style={styles.text}>Haazri</Text>
          </TouchableOpacity>
     
